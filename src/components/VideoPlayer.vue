@@ -6,7 +6,7 @@ import fileName from "./fileNameState";
 let width = Math.min(720, screen.width - 20);
 
 const videoObjectURL = ref("");
-const handleFileChange = (event) => {
+const handleFileChange = (event: any) => {
   const file = event.target.files[0];
   if (file) {
     fileName.setValue(file.name.split(".")[0]);
