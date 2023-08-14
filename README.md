@@ -9,6 +9,8 @@ A video captioning application that is entirely client-side. Make subtitles for 
 
 ## Demo
 
+<https://kushal-chandar.github.io/Video-Captionator/>
+
 ## Goals
 
 - stronger input validation
