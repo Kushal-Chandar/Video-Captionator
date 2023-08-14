@@ -39,21 +39,19 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
   display: flex;
   flex-direction: column;
   padding: 1%;
-  margin: 1%;
   place-items: center;
-  width: 100%;
 }
 .icons {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  width: 50vh;
+  width: 50%;
   margin: 1%;
 }
 
-p {
-  width: 70ch;
+.Introduction p {
+  max-width: 70ch;
 }
 
 .icon {

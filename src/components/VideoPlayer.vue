@@ -3,8 +3,6 @@ import { ref } from "vue";
 import captionsURL from "./captionsURLState";
 import fileName from "./fileNameState";
 
-let width = Math.min(720, screen.width - 20);
-
 const videoObjectURL = ref("");
 const handleFileChange = (event: any) => {
   const file = event.target.files[0];
@@ -17,7 +15,7 @@ const handleFileChange = (event: any) => {
 
 <template>
   <div class="video-player">
-    <video :src="videoObjectURL" controls :width="width" autoplay>
+    <video :src="videoObjectURL" controls autoplay>
       <track
         v-if="captionsURL"
         :src="captionsURL.value"
@@ -28,7 +26,7 @@ const handleFileChange = (event: any) => {
       />
     </video>
     <div class="video-input">
-      <label for="video-input">Upload your video here:</label>
+      <label for="video-input">Upload video:</label>
       <input
         type="file"
         ref="fileInput"
@@ -42,10 +40,14 @@ const handleFileChange = (event: any) => {
 
 <style scoped>
 .video-player {
-  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 720px;
+  width: 100%;
+}
+.video-player video {
+  width: 100%;
 }
 
 .video-player video-player {

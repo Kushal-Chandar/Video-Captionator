@@ -19,5 +19,6 @@ import Introduction from "./components/Introduction.vue";
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 </style>
