@@ -14,7 +14,6 @@ A video captioning application that is entirely client-side. Make subtitles for 
 ## Goals
 
 - stronger input validation
-- responsive design
 - support light and dark colour schemes
 - better compononents structuring
 - adding more file types

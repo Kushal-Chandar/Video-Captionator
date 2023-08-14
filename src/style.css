@@ -52,10 +52,6 @@ input:focus-visible textarea:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-* {
-  outline: 1px solid red;
-}
-
 #app {
   text-align: center;
   width: 100%;
